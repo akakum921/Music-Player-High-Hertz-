@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"/>
+    
+      <!-- Javascript function to pause and play song -->
+      <script>
+        function togglePlay(id) {
+          var myAudio = document.getElementById(id);
+          return myAudio.paused ? myAudio.play() : myAudio.pause();
+        }
+      </script>
+
+    <title>High Hertz || Home Screen</title>
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    <header id="body-header">
+      <div id="name-logo-container">
+        <a href="./index.html" class="main-logo"><img src="./images/logo.png" alt="Music-Logo" /></a>
+        <p>High <br /><span>Hertz</span></p>
+        <a href="./single-playlist-screen.html" class="fav">Favourites</a>
+      </div>
+
+      <div id="search-container">
+        <div class="search-bar">
+          <span class="search"><i class="fas fa-search"></i></span>
+          <input type="text" placeholder=" Search" />
+          <button type="button">
+            <i class="fas fa-microphone microphone"></i>
+          </button>
+        </div>
+        <div class="notification-bell">
+          <span><i class="fas fa-bell"></i></span>
+        </div>
+        <div class="profile-pic">
+          <img src="./images/1628838809145.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home Screen Carousel Section -->
+      <section id="main-home-screen">
+        <div id="home-screen-carousel">
+          <div class="carousel-image">
+            <a href="#"><img src="./images/PITBULL.jpg" alt="Pitbull"/></a>
+          </div>
+          <div class="carousel-image">
+            <a href="#"><img src="./images/pic-2.jpg" alt="punjabi-mix" /></a>
+          </div>
+          <div class="carousel-image">
+            <a href="#"><img src="./images/pic-2.webp" alt="Release"/></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Release Section -->
+      <section class="latest-release">
+        <p class="section-heading">Latest Release</p>
+
+        <div class="latest-release-container">
+          <div class="latest-release-song">
+            <div class="song-image">
+              <img src="./images/Libaas.jpg" alt="" />
+              <div class="overlay-div">
+                <div class="play-icon">
+                  <audio id="myAudio1" src="./Songs/Libaas.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio1')"></a>
+                </div>
+              </div>
+            </div>
+            <div class="name-date-container">
+              <a href="#" class="song-name" onclick="togglePlay('myAudio1')">Libaas</a>
+              <br />
+              <p class="release-date">FEB 9,2020</p>
+            </div>
+            <!-- Dropdown list of latest release -->
+            <div class="button-time-content">
+              <div class="song-control-dropdown">
+                <button><i class="fas fa-ellipsis-h"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="togglePlay('myAudio1')"><i class="fas fa-play"></i>&nbsp; &nbsp; Play Now</a>
+                  <a href="#"><i class="fas fa-plus"></i>&nbsp; &nbsp; Add To Queue</a>
+                  <a href="#"><i class="fab fa-gratipay"></i>&nbsp; &nbsp; Add To Favourites</a>
+                  <a href="#"><i class="fas fa-info-circle"></i>&nbsp; &nbsp; Get Info</a>
+                </div>
+              </div>
+              <p>4:44</p>
+            </div>
+
+          </div>
+
+          <div class="latest-release-song">
+            <div class="song-image">
+              <img src="./images/Paani-Paani.jpg" alt="" />
+              <div class="overlay-div">
+                <div class="play-icon">
+                  <audio id="myAudio2" src="./Songs/Pani Pani - Badshah.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio2')"></a>
+                </div>
+              </div>
+            </div>
+            <div class="name-date-container">
+              <a href="#" class="song-name" onclick="togglePlay('myAudio2')">Paani-Panni</a>
+              <br />
+              <p class="release-date">JUN 11,2019</p>
+            </div>
+            <div class="button-time-content">
+              <div class="song-control-dropdown">
+                <button><i class="fas fa-ellipsis-h"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="togglePlay('myAudio2')" ><i class="fas fa-play"></i>&nbsp; &nbsp; Play Now</a>
+                  <a href="#"><i class="fas fa-plus"></i>&nbsp; &nbsp; Add To Queue</a>
+                  <a href="#"><i class="fab fa-gratipay"></i>&nbsp; &nbsp; Add To Favourites</a>
+                  <a href="#"><i class="fas fa-info-circle"></i>&nbsp; &nbsp; Get Info</a>
+                </div>
+              </div>
+              <p>4:56</p>
+            </div>
+          </div>
+
+          <div class="latest-release-song">
+            <div class="song-image">
+              <img src="./images/Loveyatri.jpg" alt="Loveyatri" />
+              <div class="overlay-div">
+                <div class="play-icon">
+                  <audio id="myAudio3" src="./Songs/06 Loveyatri - Title Song.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio3')"></a>
+                </div>
+              </div>
+            </div>
+            <div class="name-date-container">
+              <a href="#" class="song-name" onclick="togglePlay('myAudio3')" >Loveyatri</a>
+              <br />
+              <p class="release-date">DEC 8,2019</p>
+            </div>
+            <div class="button-time-content">
+              <div class="song-control-dropdown">
+                <button><i class="fas fa-ellipsis-h"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="togglePlay('myAudio3')" ><i class="fas fa-play"></i>&nbsp; &nbsp; Play Now</a>
+                  <a href="#"><i class="fas fa-plus"></i>&nbsp; &nbsp; Add To Queue</a>
+                  <a href="#"><i class="fab fa-gratipay"></i>&nbsp; &nbsp; Add To Favourites</a>
+                  <a href="#"><i class="fas fa-info-circle"></i>&nbsp; &nbsp; Get Info</a>
+                </div>
+              </div>
+              <p>2:23</p>
+            </div>
+          </div>
+
+          <div class="latest-release-song">
+            <div class="song-image">
+              <a href="#"><img src="./images/Shershaah.jpg" alt="" /></a>
+              <div class="overlay-div">
+                <div class="play-icon">
+                  <audio id="myAudio4" src="./Songs/Ranjha.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio4')"></a>
+                </div>
+              </div>
+            </div>
+            <div class="name-date-container">
+              <a href="#" class="song-name" onclick="togglePlay('myAudio4')">Shershaah</a>
+              <br />
+              <p class="release-date">AUG 10,2021</p>
+            </div>
+            <div class="button-time-content">
+              <div class="song-control-dropdown">
+                <button><i class="fas fa-ellipsis-h"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="togglePlay('myAudio4')"><i class="fas fa-play"></i>&nbsp; &nbsp; Play Now</a>
+                  <a href="#"><i class="fas fa-plus"></i>&nbsp; &nbsp; Add To Queue</a>
+                  <a href="#"><i class="fab fa-gratipay"></i>&nbsp; &nbsp; Add To Favourites</a>
+                  <a href="#"><i class="fas fa-info-circle"></i>&nbsp; &nbsp; Get Info</a>
+                </div>
+              </div>
+              <p>3:59</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Popular Artists Section-->
+      <section id="popular-artist-section">
+
+        <p class="section-heading">Popular Artists</p>
+
+        <div id="popular-artist-container">   <!-- Artist Container -->
+
+          <div class="atrtist-info">
+            <div class="artist-image-container">
+              <img src="./images/Yo_Yo_Honey_Singh.jpg" alt="artist" />
+              <div class="artist-overlay">
+                <a href="./Artist-1-single-playlist-screen.html"
+                  ><div class="play-button"><i class="fas fa-play"></i></div
+                ></a>
+              </div>
+            </div>
+            <p class="artist-name">Yo Yo Honey Singh</p>
+          </div>
+
+          <div class="artist-info">
+            <div class="artist-image-container">
+              <a href="./Artist-2-playlist-screen.html" class="artist-image"><img src="./images/Neha_Kakkar.jpg" alt="artist"/></a>
+              <div class="artist-overlay">
+                <a href="./Artist-2-single-playlist-screen.html"><div class="play-button"><i class="fas fa-play"></i></div></a>
+              </div>
+            </div>
+            <p class="artist-name">Neha Kakkar</p>
+          </div>
+
+          <div class="artist-info">
+            <div class="artist-image-container">
+              <a href="#"><img src="./images/Jubin_Nautiyal.jpg" alt="artist"/></a>
+              <div class="artist-overlay">
+                <a href="./Artist-3-single-playlist-screen.html"><div class="play-button"><i class="fas fa-play"></i></div></a>
+              </div>
+            </div>
+            <p class="artist-name">Jubin Nautiyal</p>
+          </div>
+
+          <div class="artist-info">
+            <div class="artist-image-container">
+              <a href="#"><img src="./images/Ed_Sheeran.jpg" alt="artist" /></a>
+              <div class="artist-overlay">
+                <a href="./Artist-4-single-playlist-screen.html"><div class="play-button"><i class="fas fa-play"></i></div ></a>
+              </div>
+            </div>
+            <p class="artist-name">Ed Sheeran</p>
+          </div>
+
+          <div class="artist-info">
+            <div class="artist-image-container">
+              <a href="#"><img src="./images/Darshan_Raval.jpg" alt="artist"/></a>
+              <div class="artist-overlay">
+                <a href="./Artist-5-single-playlist-screen.html"><div class="play-button"><i class="fas fa-play"></i></div></a>
+              </div>
+            </div>
+            <p class="artist-name">Darshan Raval</p>
+          </div>
+
+          <div class="artist-info">
+            <div class="artist-image-container">
+              <a href="#"><img src="./images/Guru Randhawa.jpg" alt="artist" /></a>
+              <div class="artist-overlay">
+                <a href="./Artist-6-single-playlist-screen.html"><div class="play-button"><i class="fas fa-play"></i></div></a>
+              </div>
+            </div>
+            <p class="artist-name">Guru Randhawa</p>
+          </div>
+        </div>
+
+        <!-- Stations Div -->
+        <div id="station-section-container">
+
+          <div id="station-logo">
+            <img src="./images/HitsRadio.jpg" alt="Radio Station" />
+          </div>
+
+          <div class="station-type-container">
+            <div class="station-type">
+              <img src="./images/love.jpg" alt="Love" />
+              <div class="mood-name">Love</div>
+            </div>
+            <div class="station-type">
+              <img src="./images/Retro.jpg" alt="Retro" />
+              <div class="mood-name">Retro</div>
+            </div>
+            <div class="station-type">
+              <img src="./images/chill.jpg" alt="Chill" />
+              <div class="mood-name">Chill</div>
+            </div>
+            <div class="station-type">
+              <img src="./images/workout.jpg" alt="Workout" />
+              <div class="mood-name">Workout</div>
+            </div>
+            <div class="station-type">
+              <img src="./images/size_m_1514444697.webp" alt="Rock" />
+              <div class="mood-name">Rock</div>
+            </div>
+            <div class="station-type">
+              <img src="./images/pop.jpg" alt="Pop" />
+              <div class="mood-name">Pop</div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Song Ocassion Container -->
+        <div id="song-ocassion-container">
+          <div class="song-occasion-type">
+            <img src="./images/party.jpg" alt="Party" />
+            <div class="type-name centered">Party</div>
+          </div>
+          <div class="song-occasion-type">
+            <img src="./images/electronic.jpg" alt="Electronic" />
+            <div class="type-name centered">Electronic</div>
+          </div>
+          <div class="song-occasion-type">
+            <img src="./images/road-trip.jpg" alt="Road Trip" />
+            <div class="type-name centered">Road Trip</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest English Song Section -->
+      <section id="latest-english-songs" class="english-hindi-common">
+        <p class="section-heading">Latest English</p>
+        <div class="english-songs-container">
+
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"><img src="./images/Alone-English.jpg" alt="Alone"/></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio5" src="./Songs/Alone.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio5')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Alone</p>
+            <p class="release-date">AUG 15,2017</p>
+          </div>
+
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"
+                ><img src="./images/Bilionera-English.jpg" alt="Bilionera"
+              /></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio6" src="./Songs/Bilionera-Otilia.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio6')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Bilionera</p>
+            <p class="release-date">FEB 9,2020</p>
+          </div>
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"
+                ><img src="./images/Faded-English.jpg" alt="Faded"
+              /></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio7" src="./Songs/Faded.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio7')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Faded</p>
+            <p class="release-date">JUL 5,2018</p>
+          </div>
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"
+                ><img src="./images/On-My-Way-English.jpg" alt="On-My-Way"
+              /></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio8" src="./Songs/On My Way.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio8')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">On My Way</p>
+            <p class="release-date">DEC 8,2019</p>
+          </div>
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"
+                ><img src="./images/Safari-English.jpg" alt="Safari"
+              /></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio9" src="./Songs/Safari.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio9')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Safari</p>
+            <p class="release-date">JAN 16,2015</p>
+          </div>
+          <div class="english-song-description">
+            <div class="english-song-image">
+              <a href="#"><img src="./images/Sugar-Brownies-English.jpg"alt="Sugar-Brownies" /></a>
+              <div class="english-song-overlay">
+                <div class="english-play-button">
+                  <audio id="myAudio10" src="./Songs/Sugar & Brownies.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio10')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Sugar Brownies</p>
+            <p class="release-date">NOV 9,2021</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Hindi Song Section -->
+      <section id="latest-hindi-songs" class="english-hindi-common">
+        <p class="section-heading">Latest Hindi</p>
+        <div class="hindi-songs-container">
+
+          <!-- Songs Divs -->
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Genda-Phool.jpg" alt="Genda Phool"/></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio11" src="./Songs/Genda Phool - Badshah.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio11')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Genda Phool</p>
+            <p class="release-date">AUG 15,2017</p>
+          </div>
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Ghungroo.jpg" alt="Ghungroo" /></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio12" src="./Songs/Ghungroo - War.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio12')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Ghungroo</p>
+            <p class="release-date">FEB 9,2020</p>
+          </div>
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Love-Aaj-Kal.jpg" alt="Love-Aaj-Kal" /></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio13" src="./Songs/Shayad - Love Aaj Kal.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio13')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Shayad</p>
+            <p class="release-date">MAR 26,2018</p>
+          </div>
+
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Ranjhaa.jpg" alt="Ranjhaa" /></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio14" src="./Songs/Ranjha.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio14')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Ranjhaa</p>
+            <p class="release-date">DEC 8,2019</p>
+          </div>
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Adhuri-Kahani.jpg" alt="Adhuri Kahani"/></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio15" src="./Songs/Hamari Adhuri Kahani.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio15')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Adhuri Kahani</p>
+            <p class="release-date">JAN 16,2015</p>
+          </div>
+
+          <div class="hindi-song-description">
+            <div class="hindi-song-image">
+              <a href="#"><img src="./images/Malang.jpg" alt="Malang" /></a>
+              <div class="hindi-song-overlay">
+                <div class="hindi-play-button">
+                  <audio id="myAudio16" src="./Songs/Malang - Title Track.mp3" preload="auto"></audio>
+                  <a id="play-pause-button" class="fa fa-play" onclick="togglePlay('myAudio16')"></a>
+                </div>
+              </div>
+            </div>
+            <p class="song-name">Malang</p>
+            <p class="release-date">NOV 9,2021</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+   
+
+    <!-- Aside Section -->
+
+    <div id="aside-queue-section">
+      <!-- Queue Header -->
+      <div id="aside-queue-header">
+        <h2 class="queue-heading">Queue</h2>
+        <div class="queue-dropdown-menu">
+          <button class="menu-btn">Queue &nbsp;&nbsp;<i class="fas fa-chevron-down"></i> </button>
+          <div class="queue-menu-content">
+            <a class="links" href="#"><i class="far fa-list-alt"></i>&nbsp;&nbsp; Playlists</a>
+            <a class="links" href="#"><i class="far fa-bookmark"></i>&nbsp;&nbsp; Favourite Songs</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Queue Songs List -->
+      <aside>
+        <div id="queue-container">
+
+          <div class="item">
+            <span class="serial-number">01</span>
+            <div class="queue-song-image">
+              <img src="./images/Libaas.jpg" alt="Libaas" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Libaas</a>
+              <p class="singer-name">Kaka</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">02</span>
+            <div class="queue-song-image">
+              <img src="./images/Ghungroo.jpg" alt="Ghungroo" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Ghungroo</a>
+              <p class="singer-name">Atif Aslam</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">03</span>
+            <div class="queue-song-image">
+              <img src="./images/Genda-Phool.jpg" alt="Genda Phool" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Genda Phool</a>
+              <p class="singer-name">Baadshah</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">04</span>
+            <div class="queue-song-image">
+              <img src="./images/Paani-Paani.jpg" alt="Paani-Paani" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Paani Paani</a>
+              <p class="singer-name">Baadshah</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">05</span>
+            <div class="queue-song-image">
+              <img src="./images/BellBottom.jpg" alt="BellBottom" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">BellBottom</a>
+              <p class="singer-name">Arijit Singh</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">06</span>
+            <div class="queue-song-image">
+              <img src="./images/Bhoot-Police.jpg" alt="Bhoot-Police" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Bhoot Police</a>
+              <p class="singer-name">Aakriti Mishra</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">07</span>
+            <div class="queue-song-image">
+              <img src="./images/Malang.jpg" alt="Malang" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Malang</a>
+              <p class="singer-name">Ved Sharma</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">08</span>
+            <div class="queue-song-image">
+              <img src="./images/Barsaat-Ki-Dhun.jpg" alt="Barsaat-Ki-Dhun" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Barsaat Ki Dhun</a>
+              <p class="singer-name">Anu Malik</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">09</span>
+            <div class="queue-song-image">
+              <img src="./images/Adhuri-Kahani.jpg" alt="Adhuri-Kahani" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Adhuri Kahani</a>
+              <p class="singer-name">Arijit Singh</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">10</span>
+            <div class="queue-song-image">
+              <img src="./images/Libaas.jpg" alt="Libaas" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Libaas</a>
+              <p class="singer-name">Kaka</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">11</span>
+            <div class="queue-song-image">
+              <img src="./images/Sugar-Brownies-English.jpg" alt="Sugar-Brownies"/>
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Sugar Brownies</a>
+              <p class="singer-name">Dharia</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">12</span>
+            <div class="queue-song-image">
+              <img src="./images/Safari-English.jpg" alt="Safari" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Safari</a>
+              <p class="singer-name">Serena</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">13</span>
+            <div class="queue-song-image">
+              <img src="./images/Bilionera-English.jpg" alt="Bilionera" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Bilionera</a>
+              <p class="singer-name">Otilia</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">14</span>
+            <div class="queue-song-image">
+              <img src="./images/Faded-English.jpg" alt="Faded" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Faded</a>
+              <p class="singer-name">Alan Walker</p>
+            </div>
+            <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+          </div>
+
+          <div class="item">
+            <span class="serial-number">15</span>
+            <div class="queue-song-image">
+              <img src="./images/Love-Aaj-Kal.jpg" alt="Love-Aaj-Kal" />
+              <div class="queue-image-overlay"></div>
+              <a href="#" class="button1"><i class="fas fa-play"></i></a>
+            </div>
+            <div class="queue-song-description">
+              <a href="https://www.codingninjas.com/" class="song-name">Shayad</a>
+              <p class="singer-name">Jubin Nautiyal</p>
+            </div>
+            <div id="item-heart-div">
+              <a href="#" class="heart-button"><i class="far fa-heart"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer Music Player Panel -->
+    <footer id="footer-player-panel">
+      <div id="footer-song-container">
+        <div class="footer-song-image">
+          <img src="./images/Faded-English.jpg" alt="Faded" />
+          <div class="footer-image-overlay"></div>
+        </div>
+        <div class="footer-song-description">
+          <a href="https://www.codingninjas.com/" class="song-name">Shayad</a>
+          <p class="singer-name">Jubin Nautiyal</p>
+        </div>
+        <button type="submit"><i class="far fa-heart"></i></button>
+        <button type="submit"><i class="fas fa-ban"></i></button>
+      </div>
+       
+      <div id="music-control">
+        <div class="play-pause-control">
+          <ul>
+            <li>
+              <span><i class="fas fa-random"></i></span>
+            </li>
+            <li>
+              <span><i class="fas fa-step-backward"></i></span>
+            </li>
+            <li .pd-top5>
+              <span><i class="far fa-play-circle " style="font-size: 1.8rem; color: white;"></i></span>
+            </li>
+            <li>     
+              <span><i class="fas fa-step-forward"></i></span>
+            </li>
+            <li>
+              <span><i class="fas fa-redo"></i></span>
+            </li>
+          </ul> 
+        </div>
+
+        <div class="music-seek-time">
+          <input type="range" min="1" max="100" value="50" id="myrange" class="music-seeker"/>
+        </div>
+      </div>
+      
+      <!-- Music Volume control -->
+      <div class="sound-device-control">
+        <button type="button"><i class="fas fa-stream"></i></button>
+        <button type="button"><i class="fas fa-tv"></i></button>
+        <button type="button"><i class="fas fa-volume-up"></i></button>
+        <div class="volume-controler">
+         <input type="range" min="1" max="100" value="50" id="myrange" class="volume-slider"/>
+        </div>
+        <button type="button"><i class="fas fa-expand"></i></button>
+      </div>
+    </footer>
+  </body>
+</html>
